@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>home</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- <div class="nav-logo">
+            <a href="#">
+                <img src="/static/images/logo.jpg">
+            </a>
+        </div> -->
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Pricing</a></li>
+            <li id="link2" class="link"><a href="#">About</a></li>
+        </ul>
+        <a href="{{ url_for('login') }}" class="link-button">
+            <button class="btn">Sign In</button>
+          </a>
+    </nav>
+    <header class="container">
+        <div class="content">
+            <H1>Fitness hub</H1>
+            <p>
+                Are you ready to embark on a transformative journey towards a healthier and fitter you?
+                Look no further! Our cutting-edge website offers an exceptional program that combines dynamic workouts with precise calorie calculations, 
+                all designed to help you achieve your fitness goals effectively.
+            </p>
+            <a href="{{ url_for('register') }}" class="link-button">
+            <button class="btn">Get Started</button>
+        </div>
+    </header>
+
+    <footer class="container">
+        <div class="column">
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2023 wadszxc. All Rights Reserved.
+    </div>
+
+
+    <script src="/static/js/home.js"></script>
+</body>
+
+</html>
